@@ -1,0 +1,206 @@
+/* Index Component */
+.front-page {
+  height: 100vh;
+  background: url(../src/assets/new-one.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.menu {
+  color: black;
+  text-decoration: none;
+}
+.menu:hover {
+  color: #0400af;
+  cursor: pointer;
+}
+
+.btn-bg {
+  color: white;
+  font-weight: 500;
+  position: relative;
+  z-index: 0;
+  border: 1px solid #0400af;
+}
+.btn-bg::before {
+  content: "";
+  background-color: #0400af;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.btn-bg:hover {
+  border: 1px solid #0400af;
+}
+.btn-bg:hover::before {
+  width: 0;
+}
+.btn-bg:hover .started {
+  color: #0400af;
+}
+
+/* .btn-bg:hover {
+  color: white;
+} */
+
+/* Explore button */
+.btn-color {
+  border: 1px solid #0400af;
+  color: #0400af;
+  font-weight: 500;
+  position: relative;
+  background: none;
+  z-index: 0;
+}
+.btn-color:hover {
+  border: 1px solid #0400af;
+}
+.btn-color::before {
+  content: "";
+  background-color: #0400af;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.btn-color:hover::before {
+  width: 100%;
+}
+.btn-color:hover .explore {
+  color: white;
+}
+
+/* Card Component */
+.card-w {
+  width: 250px;
+  height: 350px;
+  background-color: #cdccef;
+}
+.card-img {
+  width: 50px;
+  height: 50px;
+}
+.font1 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.font2 {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Experience components */
+.ex-bg{
+  background-color: #cdccef;
+}
+.solar-img{
+  width: 30rem;
+  margin: 0 auto;
+}
+.box{
+  width: 47vw;
+}
+
+/* Testimony */
+.card-c {
+  width: 250px;
+  height: 310px;
+}
+.font3 {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer-p{
+  width: 35vw;
+}
+.social{
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+.closedinput{
+  position: relative;
+  width: 28vw;
+  margin: auto;
+}
+.email-input{
+  width: inherit;
+  padding: 7px 0;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.email-input::placeholder{
+  font-size: 0.8rem;
+}
+.sub{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  background-color: rgb(31, 29, 29);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1vw;
+  width: 6vw;
+}
+.footer-span{
+  text-align: center;
+}
+
+/* media queries */
+@media ( max-width:1350px ) {
+  .sub{
+    top: 10px;
+  }
+}
+@media ( max-width:800px ) {
+  .sub{
+    top: 12px;
+  }
+}
+@media ( max-width:650px ) {
+  .sub{
+    top: 15px;
+  }
+}
+@media ( max-width:500px ) {
+  .sub{
+    display: none;
+  }
+}
+@media ( max-width:450px ) {
+.menu-holder{
+  justify-content: flex-end !important;
+}
+.menu-div{
+  display: flex !important;
+  flex-direction: column;
+  align-items: self-end;
+}
+.btn-control{
+  display: flex !important;
+ justify-content: safe;
+ margin: 0 30px !important;
+
+}
+.menu{
+  font-size: 12px;
+}
+/* #footer{
+  width: 100vw !important;
+} */
+.menu-btn{
+  width:20vw !important;
+}
+.get{
+  font-size: 10px !important;
+}
+}
